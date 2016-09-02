@@ -17,6 +17,13 @@
 // write your code here
 
 
+var daysOfTheWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+
+func printDays (days: [String]) {
+    for day in days {
+        print (day)
+    }
+}
 
 
 
@@ -27,6 +34,11 @@
  */
 // write your code here
 
+let numDaysOfTheWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+
+for (index, step) in numDaysOfTheWeek.enumerate() {
+    print("\(index + 1). \(step)")
+}
 
 
 
@@ -51,6 +63,14 @@
 // write your code here
 
 
+var emptyArray : [String] = []
+
+
+if emptyArray.isEmpty {
+    print("No strings yet")
+} else {
+    print("Ready to make sentences!)")
+}
 
 
 
@@ -63,6 +83,12 @@
  */
 // write your code here
 
+var reverseEmptyArray: [String] = []
+if !reverseEmptyArray.isEmpty {
+    print("No strings here.")
+} else {
+    print("Ready to make sentences.")
+}
 
 
 
@@ -77,6 +103,14 @@
 
 
 
+daysOfTheWeek.append("Saturday")
+daysOfTheWeek.append("Sunday")
+func printNewDays(days:[String]) {
+    for day in days {
+        print(day)
+    }
+}
+printNewDays(daysOfTheWeek)
 
 
 
@@ -87,6 +121,13 @@
 // write your code here
 
 
+var lastToFirst = daysOfTheWeek.removeLast()
+
+print (daysOfTheWeek)
+
+daysOfTheWeek.insert("\(lastToFirst)", atIndex: 0)
+
+print (daysOfTheWeek)
 
 
 
@@ -99,6 +140,16 @@
 // write your code here
 
 
+func lowCase (days: [String]) {
+    
+    for day in days {
+        print ("\(day.lowercaseString)")
+    }
+    
+}
+
+
+lowCase(daysOfTheWeek)
 
 
 
@@ -111,7 +162,13 @@
 // write your code here
 
 
-
+daysOfTheWeek.count
+if daysOfTheWeek.count > 5 {
+    daysOfTheWeek.removeLast()
+    daysOfTheWeek.removeFirst()
+    print (daysOfTheWeek)
+    
+}
 
 
 
